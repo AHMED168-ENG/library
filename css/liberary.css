@@ -1,7 +1,6 @@
 body {
     direction: rtl !important;
     text-align: right;
-    height:9000px
 }
 :root {
     --main-color : #45B09E;
@@ -97,7 +96,7 @@ nav .pairant .child1 span
     border-right:1px solid #eee;
 }
 nav .pairant .child1 span img {
-    width:55px;
+    width:45px;
     height:auto
 }
 nav .pairant .child1 ul li
@@ -391,11 +390,12 @@ nav .small_navbare ul li a.one , nav .small_navbare ul li a.tow {
 .catigory_books .row .child1 .controll > div::after {
     content:"";
     position:absolute;
-    left:0;
-    width:100%;
-    background:#c7c7c7;
+    left:50%;
+    width:0%;
+    background:var(--main-color);
     height:2px;
-    bottom:-2px
+    bottom:-2px;
+    transition:0.4s
 }
 .catigory_books .row .child1 .controll > div::before {
     content:"";
@@ -408,7 +408,8 @@ nav .small_navbare ul li a.one , nav .small_navbare ul li a.tow {
     background:var(--main-color);
     z-index: 5;
 }
-.catigory_books .row .child1 .controll > div.active::before  {
+.catigory_books .row .child1 .controll > div.active::before , .catigory_books .row .child1 .controll > div:hover::after
+{
     width:100%;
     left:0;
 }

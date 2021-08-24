@@ -40,7 +40,7 @@ window.onscroll = function() {
     } else {
         nav.classList.remove("active");
     }
-    if(window.scrollY > 2500) {
+    if(window.scrollY > 2500 && window.scrollY  < 4000 ) {
         tow.classList.add("active");
     } else {
         tow.classList.remove("active");

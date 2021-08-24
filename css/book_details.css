@@ -1,7 +1,6 @@
 body {
     direction: rtl !important;
     text-align: right;
-    height:9000px
 }
 .row {
     margin : 0;
@@ -100,7 +99,7 @@ nav .pairant .child1 span
     border-right:1px solid #eee;
 }
 nav .pairant .child1 span img {
-    width:55px;
+    width:45px;
     height:auto
 }
 nav .pairant .child1 ul li
@@ -672,7 +671,7 @@ nav .small_navbare ul li a.one , nav .small_navbare ul li a.tow {
 .catigory_books .row .comments .content .comment .react a:last-child {
     border-left:0;
 }
-.catigory_books .row .content > a {
+.catigory_books .row .content .comments a {
     width:100%;
     padding:15px 0;
     background:#CEECE7;
@@ -683,6 +682,152 @@ nav .small_navbare ul li a.one , nav .small_navbare ul li a.tow {
     display:block;
     text-align: center;
 }
+.catigory_books .row a.more {
+    background:white;
+    border:1px solid #ccc;
+    text-align:center;
+    height:75px;
+    line-height: 75px;
+    width:100%;
+    display: block;
+    color:var(--main-color);
+    margin:20px 0;
+}
+.catigory_books .row  a.more i {
+    margin:0 5px;
+}
+.catigory_books .row  .social_media {
+    width:100%;
+    padding:15px 50px;
+    justify-content: space-between;
+    background:white;
+    align-items: center;
+}
+.catigory_books .row .social_media p {
+    margin:0;
+    color:red;
+    font-size:25px;
+}
+.catigory_books .row .social_media .icon i {
+    font-size: 19px;
+    color:white;
+    width:40px;
+    height:40px;
+    background:gray;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.catigory_books .row .social_media .icon a:nth-of-type(1) i {
+    background:#0E76A8;
+}
+.catigory_books .row .social_media .icon a:nth-of-type(2) i {
+    background:#0088CC;
+}
+.catigory_books .row .social_media .icon a:nth-of-type(3) i {
+    background:#00ACEE;
+}
+.catigory_books .row .social_media .icon a:nth-of-type(4) i {
+    background:#3578E5;
+}
+.catigory_books .row .social_media .icon a:nth-of-type(5) i {
+    background:#45B09E;
+}
+
+.related_books 
+{
+    margin-top:20px
+}
+.related_books > h2 a {
+    color:#000 !important;
+    font-size: 25px !important;
+    font-style: italic;
+}
+.related_books h2 a:hover {
+    text-decoration: underline;
+}
+.related_books .contents a
+{
+    margin:20px 0;
+    background:none
+}
+.related_books .contents a > div  {
+    padding:5px 20px 0px;
+    text-align: center;
+    border:1px solid #dadde1 ;
+    background:white;
+    border-radius:8px;
+    transition:0.5s;
+}
+
+.related_books .contents a > div .stars span:nth-child(1) {
+    margin:0 5px;
+    color:#FFB400
+
+}
+.related_books .contents a > div .stars span:nth-child(2) {
+    color:#000
+}
+.related_books .contents a > div .photo  {
+    margin-top:4px;
+    height:240px
+}
+.related_books .contents a > div .photo img {
+    width:100%;
+    height:auto;
+    padding:3px;
+    border:1px solid #dadde1;
+    border-radius: 5px;
+}
+.related_books .contents a > div .photo h4 {
+    font-size:16px;
+    margin-top:10px;
+    color:black
+}
+.related_books .contents a > div p {
+    color:var(--main-color)
+}
+.related_books .contents a:hover > div {
+    transform:translateY(-11px);
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
+    border-color:var(--main-color);
+    
+}
+
+@media(max-width:1200px) {
+    .related_books .contents a > div .photo {
+        height:210px;
+    }
+}
+@media(max-width:992px) {
+    .related_books .row aside div:nth-child(2).active {
+        position: relative;
+        left:0;
+        bottom:0;
+    }
+    .related_books .contents a > div .photo {
+        height:190px;
+    }
+}
+@media(max-width:570px) {
+    .related_books .contents a > div .photo {
+        height:230px;
+        padding:0 25px
+    }
+    .related_books .contents a > div .photo img {
+        width:80%;
+    }
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -756,6 +901,29 @@ nav .small_navbare ul li a.one , nav .small_navbare ul li a.tow {
     }
 }
 /* end catigory_books */
+
+/* start footer */
+footer {
+    padding:25px 0 ;
+}
+footer p {
+    font-size:15px;
+    font-style: italic;
+    margin:0 0 7px 0;
+}
+footer p:last-of-type {
+    margin-bottom:20px
+}
+
+footer div.container div a {
+    font-size:16px;
+    color:var(--main-color);
+    margin:0 7px;
+}
+footer div.container div a:hover {
+    text-decoration: underline;
+}
+/* end footer */
 
 
 
