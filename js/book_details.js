@@ -1,8 +1,7 @@
 /* -------------------------- read more -------------------------------------*/
-var read_more = document.querySelectorAll("red_more");
 var all_text = document.querySelectorAll(".all_text");
 var read_more = document.querySelectorAll(".read_more");
-var arr = [false , false] ;
+var arr = [false , false , false , false] ;
 read_more.forEach((element , key) => {
     element.onclick = function() {
         console.log("dd")
